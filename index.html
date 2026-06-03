@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,500..700;1,500..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="Intro-section.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <header>
+  <div class="logo"><a href="./index.html"></a><img src="./images/logo.svg" alt=""></div>
+
+    <!-- <div>
+      <img src="./images/icon-menu.svg" alt="">
+      <img src="./images/icon-close-menu.svg" alt="">
+    </div> -->
+
+  <nav>
+    <ul class="dropDown">
+      <li class="dropDown-menu"><a href="#">Features</a> <img src="./images/icon-arrow-down.svg" alt="">
+      <img src="./images/icon-arrow-up.svg" alt="">
+    <ul class="dropDown-content">
+      <li class="Todo"><a href="#"><img src="./images/icon-todo.svg" alt="">Todo List</a></li>
+      <li class="Todo"><a href="#"><img src="./images/icon-calendar.svg" alt="">Calander</a></li>
+      <li class="Todo"><a href="#"><img src="./images/icon-reminders.svg" alt="">Reminders</a></li>
+      <li class="Todo"><a href="#"><img src="./images/icon-planning.svg" alt="">Planning</a></li>
+    </ul>
+  </li>
+    <li class="dropDown-menu"><a href="#">Company</a> <img src="./images/icon-arrow-down.svg" alt="">
+    <img src="./images/icon-arrow-up.svg" alt="">
+<ul class="dropDown-content">
+  <li class="History"><a href="#">History</a></li>
+  <li class="History"><a href="#">Our Team</a></li>
+  <li class="History"><a href="#">Blog</a></li>
+</ul>
+</li>
+<li class="dropDown-menu"><a href="#">Careers</a></li>
+<li class="dropDown-menu"><a href="#">About</a></li>
+</ul>
+
+<div class="CTA">
+  <button>Login</button>
+  <button>Register</button>
+</div>
+</nav> 
+  
+<div class="Hamburger">
+  <img class="icon-menu" src="./images/icon-menu.svg" alt="">
+  <img class="icon-close-menu" src="./images/icon-close-menu.svg" alt="">
+</div>
+  </header>
+
+<main>
+  <div class="hero">
+  <picture>
+    <source media="(min-width: 1440px)" srcset="images\image-hero-desktop.png">
+    <img src="./images/image-hero-mobile.png" alt="">
+  </picture>
+  </div>
+
+  <section>
+  <div>
+    <h1>Make remote work</h1>
+  </div>
+
+  <p>Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.</p>
+
+  <button>Learn more</button>
+
+  <div>
+    <img src="./images/client-databiz.svg" alt="">
+    <img src="./images/client-audiophile.svg" alt="">
+    <img src="./images/client-meet.svg" alt="">
+    <img src="./images/client-maker.svg" alt="">
+  </div>
+  </section>
+</main>
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Osolase</a>.
+  </div>
+</body>
+</html>
