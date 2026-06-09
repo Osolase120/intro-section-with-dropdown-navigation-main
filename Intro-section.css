@@ -1,0 +1,420 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    height: 100vh;
+     font-family: "Epilogue", sans-serif;
+}
+
+header {
+    display: flex;
+    padding: 30px 0;
+}
+
+.logo {
+    padding: 0 20px;
+}
+
+.Hamburger {
+    position: absolute;
+    top: 33px;
+    right: 1.5rem;
+}
+
+.Hamburger.active .icon-menu {
+  display: none;
+}
+
+.Hamburger.active .icon-close-menu {
+  display: block;
+}
+
+.icon-close-menu {
+    display: none;
+    position: absolute;
+    right: 5px;
+    z-index: 1;
+}
+
+nav {
+    background-color: hsl(0, 0%, 98%);
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 65%;
+    padding: 5rem 2rem;
+    z-index: 1;
+}
+
+nav.active {
+    display: block;
+}
+
+.dropDown {
+    display: flex;
+    flex-direction: column;
+    font-family: inherit;
+    list-style: none;
+    position: relative;
+}
+
+.dropDown-menu {
+    position: relative;
+    padding: .9rem 0;
+}
+
+.dropDown-menu a {
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+}
+
+.dropDown-content {
+    position: static;
+    list-style: none;
+    padding: 1.2rem 0;
+    display: none;
+}
+
+.dropDown-content img {
+    position: relative;
+    right: 20px;
+}
+
+.dropDown-content li.Todo {
+    padding: .4rem 2.5rem;
+}
+
+.dropDown-content li.History {
+    padding: .4rem 1.4rem;
+}
+
+.dropDown-content.active {
+    display: block;
+}
+
+.icon-arrow-up {
+  display: none;
+}
+
+.icon-arrow-down {
+    padding: 0 .7rem;
+}
+
+.icon-arrow-up.active {
+  display: inline;
+  padding: 0 .7rem;
+}
+
+.icon-arrow-down.hide {
+  display: none;
+}
+
+.CTA {
+    position: relative;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.CTA button:first-child {
+    background-color: hsl(0, 0%, 98%);
+    border: none;
+    color: hsl(0, 0%, 41%);
+    font-family: inherit;
+    font-weight: 700;
+    height: 20px;
+}
+
+.CTA button:nth-child(2) {
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 15px;
+    color: hsl(0, 0%, 41%);
+    font-family: inherit;
+    font-weight: 700;
+    height: 45px;
+    padding: 10px;
+}
+
+main {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+}
+
+section {
+    position: relative;
+    top: 3rem;
+}
+
+section h1 {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+}
+
+section p {
+    color: hsl(0, 0%, 41%);
+    font-size: 18px;
+    padding: 1rem .5rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.sectionBtn {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+section button {
+    background-color: hsl(0, 0%, 8%);
+    border: 1px solid hsl(0, 0%, 8%);
+    border-radius: 20px;
+    color: hsl(0, 0%, 98%);
+    font-weight: 700;
+    height: 4rem;
+    width: 9rem;
+    padding: 0 2rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+
+.footer img {
+    width: 15%;
+}
+
+.attribution {
+    position: relative;
+    top: 60px;
+}
+
+@media screen and (max-width: 375px) {
+    section h1 {
+    font-size: 35px;
+}
+
+section p {
+    font-size: 16px;
+    padding: 1rem .7rem;
+}
+
+section button {
+    background-color: hsl(0, 0%, 8%);
+    border: 1px solid hsl(0, 0%, 8%);
+    border-radius: 20px;
+    color: hsl(0, 0%, 98%);
+    font-weight: 700;
+    height: 3.5rem;
+    width: 9rem;
+    padding: 0 2rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+    margin-left: 2px;
+}
+
+.footer img {
+    width: 15%;
+}
+
+}
+
+@media screen and (min-width: 1440px) {
+
+.logo {
+    padding: 0 20px;
+    margin-left: 50px;
+}
+
+.Hamburger {
+    display: none;
+}
+
+nav {
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    position: relative;
+    top: 0;
+    right: 0;
+    height: 30px;
+    width: 80%;
+    padding: 0 2rem;
+}
+
+.dropDown {
+    display: flex;
+    flex-direction: row;
+    font-family: inherit;
+    list-style: none;
+    position: relative;
+}
+
+.dropDown-menu {
+    position: relative;
+    padding: .4rem 1rem;
+}
+
+.dropDown-menu a {
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+}
+
+.dropDown-menu a:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+.dropDown-content {
+    display: none;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    position: absolute;
+    list-style: none;
+    margin-top: 7px;
+}
+
+.dropDown-content a {
+    position: relative;
+}
+
+.dropDown-content.one {
+    right: 30px;
+    width: 10rem;
+}
+
+.dropDown-content.two {
+    left: 0;
+}
+
+.dropDown-content img {
+    position: relative;
+    right: 10px;
+}
+
+.dropDown-content li.Todo {
+    padding: .4rem 1.5rem;
+}
+
+.dropDown-content li.History {
+    padding: .4rem 1.5rem;
+}
+
+.dropDown-menu:hover .dropDown-content {
+    display: block;
+}
+
+.dropDown-menu:hover .icon-arrow-down {
+  display: none;
+}
+
+.dropDown-menu:hover .icon-arrow-up {
+  display: inline-block;
+  padding: 0 .7rem;
+}
+
+.CTA {
+    position: relative;
+    top: 0;
+    left: 50%;
+    display: flex;
+    flex-direction: row;
+    font-family: inherit;
+    gap: 1.5rem;
+}
+
+.CTA button:first-child {
+    background-color: hsl(0, 0%, 98%);
+    border: none;
+    height: 29px;
+}
+
+.CTA button:nth-child(2) {
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 15px;
+    height: 35px;
+    width: 100px;
+    padding: 5px;
+}
+
+.CTA button:hover {
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+}
+
+.hero img {
+    width: 80%;
+}
+
+section {
+    position: relative;
+    top: 10rem;
+    width: 70rem;
+}
+
+section h1 {
+    font-size: 60px;
+    padding: 0 9rem;
+    margin-left: 4.5rem;
+    text-align: left;
+}
+
+section p {
+    padding: 3rem 7rem;
+    margin-left: 6.5rem;
+    text-align: left;
+}
+
+.sectionBtn {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem 13.5rem;
+}
+
+section button {
+    background-color: hsl(0, 0%, 8%);
+    border: 1px solid hsl(0, 0%, 8%);
+    border-radius: 10px;
+    color: hsl(0, 0%, 98%);
+    font-weight: 700;
+    height: 3rem;
+    width: 9rem;
+    padding: 0 2rem;
+}
+
+section button:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 8%);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 7rem 0;
+    margin-left: 166px;
+}
+
+.footer img {
+    width: 15%;
+}
+}
