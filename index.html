@@ -23,27 +23,27 @@
 <body>
 
   <header>
-  <div class="logo"><a href="./index.html"></a><img src="./images/logo.svg" alt=""></div>
+  <div class="logo"><a href="./index.html"><img src="./images/logo.svg" alt=""></a></div>
 
     <!-- <div>
       <img src="./images/icon-menu.svg" alt="">
       <img src="./images/icon-close-menu.svg" alt="">
     </div> -->
 
-  <nav>
+  <nav id="nav">
     <ul class="dropDown">
-      <li class="dropDown-menu"><a href="#">Features</a> <img src="./images/icon-arrow-down.svg" alt="">
-      <img src="./images/icon-arrow-up.svg" alt="">
-    <ul class="dropDown-content">
+      <li class="dropDown-menu"><a href="#">Features</a> <img class="icon-arrow-down" src="./images/icon-arrow-down.svg" alt="">
+      <img class="icon-arrow-up" src="./images/icon-arrow-up.svg" alt="">
+    <ul class="dropDown-content one">
       <li class="Todo"><a href="#"><img src="./images/icon-todo.svg" alt="">Todo List</a></li>
       <li class="Todo"><a href="#"><img src="./images/icon-calendar.svg" alt="">Calander</a></li>
       <li class="Todo"><a href="#"><img src="./images/icon-reminders.svg" alt="">Reminders</a></li>
       <li class="Todo"><a href="#"><img src="./images/icon-planning.svg" alt="">Planning</a></li>
     </ul>
   </li>
-    <li class="dropDown-menu"><a href="#">Company</a> <img src="./images/icon-arrow-down.svg" alt="">
-    <img src="./images/icon-arrow-up.svg" alt="">
-<ul class="dropDown-content">
+    <li class="dropDown-menu"><a href="#">Company</a> <img class="icon-arrow-down" src="./images/icon-arrow-down.svg" alt="">
+    <img class="icon-arrow-up" src="./images/icon-arrow-up.svg" alt="">
+<ul class="dropDown-content two">
   <li class="History"><a href="#">History</a></li>
   <li class="History"><a href="#">Our Team</a></li>
   <li class="History"><a href="#">Blog</a></li>
@@ -59,9 +59,9 @@
 </div>
 </nav> 
   
-<div class="Hamburger">
-  <img class="icon-menu" src="./images/icon-menu.svg" alt="">
-  <img class="icon-close-menu" src="./images/icon-close-menu.svg" alt="">
+<div class="Hamburger" id="Hamburger">
+  <img class="icon-menu" src="./images/icon-menu.svg" alt="" id="menuOpen">
+  <img class="icon-close-menu" src="./images/icon-close-menu.svg" alt="" id="menuClose">
 </div>
   </header>
 
@@ -81,9 +81,11 @@
   <p>Get your team in sync, no matter your location. Streamline processes, 
   create team rituals, and watch productivity soar.</p>
 
-  <button>Learn more</button>
+  <div class="sectionBtn">
+    <button>Learn more</button>
+  </div>
 
-  <div>
+  <div class="footer">
     <img src="./images/client-databiz.svg" alt="">
     <img src="./images/client-audiophile.svg" alt="">
     <img src="./images/client-meet.svg" alt="">
@@ -98,5 +100,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Osolase</a>.
   </div>
+
+  <script src="intro-section.js"></script>
 </body>
 </html>
